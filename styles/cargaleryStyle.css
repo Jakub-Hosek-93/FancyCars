@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+section {
+    padding: 60px 0;
+    background-color: #08080c;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.topbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.topbar .logo iconify-icon {
+    color: #E31E24;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.topbar nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.topbar nav a:hover {
+    color: #E31E24;
+}
+
+/* Car Gallery */
+.car-gallery .section-title {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.car-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 500px 500px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.car-card:hover {
+    box-shadow: 0 10px 20px rgba(101, 76, 76, 0.2);
+    transform: translateY(-10px);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.car-card h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.specs-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-item .label {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.spec-item .value {
+    font-size: 1rem;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.divider {
+    height: 1px;
+    background-color: #333;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.price-box {
+    text-align: right;
+}
+
+.main-price {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+footer a{
+    font-weight: bold;
+    color: #a8161b;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

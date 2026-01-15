@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+section {
+    padding: 60px 0;
+    background-color: #08080c;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.topbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.topbar .logo iconify-icon {
+    color: #E31E24;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.topbar nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.topbar nav a:hover {
+    color: #E31E24;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/Ferrari-bg.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: start;
+    padding: 60px 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.hero-btn {
+    padding: 20px;
+    background-color: #E31E24;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid #E31E24;
+    color: #E31E24;
+    box-shadow: 0 0 20px rgba(227, 30, 36, 0.3);
+}
+
+/* News Section */
+.news {
+    padding: 80px 10%;
+    background-color: #08080c;
+}
+
+.news .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.news-item {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    border-color: #e74c3c;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-item h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.news-item p {
+    color: #bbb;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Map Section */
+map {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #111;
+}
+
+.map .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.map-image {
+    width: 70%;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+
+    object-fit: cover;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    background-color: black;
+}
+
+.stats .stat-box {
+    text-align: center;
+}
+
+.stats .stat-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #E31E24;
+}
+
+.stats .stat-box p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+footer a{
+    font-weight: bold;
+    color: #a8161b;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

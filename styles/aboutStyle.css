@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+section {
+    padding: 60px 0;
+    background-color: #08080c;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.topbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.topbar .logo iconify-icon {
+    color: #E31E24;
+}
+
+.topbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.topbar nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.topbar nav a:hover {
+    color: #E31E24;
+}
+
+
+
+/* ABOUT */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.story-block h2 {
+    font-size: 2.3rem;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.story-block p {
+    font-size: 1.2rem;
+
+    line-height: 1.4;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.quote-box {
+    margin: 40px 0;
+    padding: 20px;
+    border-left: 4px solid #e31e24;
+    font-style: italic;
+    color: #fff;
+    background-color: #151515;
+}
+
+.reasons-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.reasons-list li {
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.reasons-list li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #e31e24;
+}
+
+.reasons-list strong {
+    color: #fff;
+}
+
+.note {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.services-section {
+    background-color: #080808;
+    border-top: 1px solid #222;
+}
+
+.features-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+}
+
+.feature iconify-icon {
+    color: #e31e24;
+}
+
+/* Team */
+.team-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+footer a{
+    font-weight: bold;
+    color: #a8161b;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
