@@ -74,7 +74,7 @@ section {
 .car-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 500px 500px 500px;
+    grid-template-columns: 450px 450px 450px;
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -180,4 +180,66 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+/* Responsivity */
+@media (max-width: 1200px) {
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1024px){
+    .topbar {
+        padding: 15px 30px;
+    }
+    .topbar nav {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .topbar nav {
+        display: none;
+    }
+    .car-gallery .section-title {
+        font-size: 2rem;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar {
+        padding: 10px 16px;
+    }
+    .topbar nav {
+        display: none;
+    }
+    .car-gallery .section-title {
+        padding-top: 140px;
+        font-size: 1.8rem;
+    }
+    .card-content {
+        padding: 15px;
+    }
+    .car-card h3 {
+        font-size: 1.3rem;
+    }
+    .main-price {
+        font-size: 1.3rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .topbar nav a {
+        font-size: 0.9rem;
+    }
 }

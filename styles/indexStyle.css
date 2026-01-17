@@ -234,3 +234,104 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
+
+/* Responsivity */
+@media (max-width: 1024px) {
+    .topbar {
+        padding: 15px 30px;
+    }
+    .topbar nav {
+        gap: 20px;
+    }
+    .hero {
+        padding: 60px 60px;
+        height: 85vh;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+    .news {
+        padding: 60px 8%;
+    }
+    .map-image {
+        width: 80%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 850px) {
+    .topbar nav {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar {
+        padding: 10px 16px;
+    }
+    .topbar nav {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    .hero-content h2 {
+        font-size: 1rem;
+        display: flex;
+        justify-items: center;
+    }
+    .hero-btn {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+    .news {
+        padding: 40px 5%;
+    }
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+    .news-item img {
+        height: 150px;
+    }
+    .map-image {
+        width: 100%;
+        height: auto;
+        max-height: 360px;
+    }
+    .stats .stat-box h3 {
+        font-size: 1.8rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content h2 {
+        font-size: 0.95rem;
+    }
+    .hero-btn {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+    .topbar nav a {
+        font-size: 0.9rem;
+    }
+    .news-item p {
+        font-size: 0.85rem;
+    }
+    .stats .stat-box h3 {
+        font-size: 1.1rem;
+    }
+    .map-image {
+        max-height: 300px;
+    }
+}
+

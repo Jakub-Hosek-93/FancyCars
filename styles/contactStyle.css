@@ -139,6 +139,8 @@ section {
     padding: 40px;
     border: 1px solid #222;
     border-radius: 8px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .form-wrapper h2 {
@@ -218,8 +220,8 @@ input[type="radio"], input[type="checkbox"] {
     padding: 30px;
     border: 1px solid #222;
     border-radius: 8px;
-    margin-bottom: 30px;
-    max-width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 30px auto;
 }
 
 .opening-hours h2 {
@@ -266,4 +268,35 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+
+/* Responsivity */
+@media (max-width: 1024px) {
+    .topbar {
+        padding: 15px 30px;
+    }
+
+    .topbar nav {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    .topbar nav {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .topbar .logo {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 0.9rem;
+    }
 }
